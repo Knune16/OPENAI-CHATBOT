@@ -145,7 +145,7 @@ const Chat = () => {
             fontWeight: "600",
           }}
         >
-          Model - GPT 3.5 Turbo
+          Model - gpt-4o-mini
         </Typography>
         <Box
           sx={{
@@ -199,4 +199,3 @@ const Chat = () => {
 };
 
 export default Chat;
-

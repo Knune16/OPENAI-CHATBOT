@@ -21,7 +21,7 @@ export const generateChatCompletion = async (req, res, next) => {
         const openai = new OpenAIApi(config);
         // get latest response
         const chatResponse = await openai.createChatCompletion({
-            model: "gpt-3.5-turbo",
+            model: "gpt-4o-mini",
             messages: chats,
         });
         console.log(chatResponse.data.choices[0].message);
