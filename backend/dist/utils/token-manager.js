@@ -1,8 +1,8 @@
-import jwt from 'jsonwebtoken';
-import { COOKIE_NAME } from './constants.js';
+import jwt from "jsonwebtoken";
+import { COOKIE_NAME } from "./constants.js";
 export const createToken = (id, email, expiresIn) => {
-    const payLoad = { id, email };
-    const token = jwt.sign(payLoad, process.env.JWT_SECRET, {
+    const payload = { id, email };
+    const token = jwt.sign(payload, process.env.JWT_SECRET, {
         expiresIn,
     });
     return token;
